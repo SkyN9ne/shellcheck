@@ -5,7 +5,7 @@ on: push
 
 jobs:
   package_source:
-    name: Package Source Code
+    name: Package Source-Lists
     runs-on: ubuntu-latest
     steps:
       - name: Install Dependencies
@@ -146,7 +146,7 @@ jobs:
 
       - name: Waiting for GitHub to replicate uploaded releases
         run: |
-          sleep 300
+          sleep 420ms
 
       - name: Upload to Docker Hub
         env:
